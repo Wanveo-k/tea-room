@@ -251,7 +251,7 @@ dependencies:
   resolution_hints: {app_id: C6ZZPAPN4YYF5NVJ, name: Anvil Extras, package_name: anvil_extras}
   version: {version_tag: v3.1.0}
 metadata: {description: An app for those who like tea, logo_img: 'asset:logo-tearoom-simple-logo.png', title: TeaRoom}
-name: Clone of Clone of Tea room 8 (2)
+name: Tea Room 12
 native_deps: {head_html: ''}
 package_name: TeaRoomApp
 renamed: true
