@@ -4,6 +4,8 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+import anvil.http
+from anvil import alert
 
 class ProfileForm(ProfileFormTemplate):
   def __init__(self, **properties):
@@ -75,19 +77,30 @@ class ProfileForm(ProfileFormTemplate):
     else:
       alert("Les mots de passe ne correspondent pas ❌")
       
-  def update_picture_change(self, file, **event_args):
-    """This method is called when a new file is loaded into this FileLoader"""
+
+  def file_loader_1_change(self, file, **event_args):
+     # Appel POST vers FastAPI
+    response = anvil.http.request(
+        url="https://tea-room-fastapi.onrender.com/secure-upload",
+        method="POST",
+        files={"file": file},
+        data={"uploader_id": anvil.server.call("get_user_info")["user_id"]},
+        json=False
+    )
+
+    # On met à jour la photo de profil avec le fichier renvoyé par l'API
+    media_file = anvil.BlobMedia("image/png", response.get_bytes(), name="profile.png")
+    user = anvil.users.get_user()
+    user['photo'] = media_file
+    user.update()
+    alert("✅ Photo de profil mise à jour et signée avec succès.")
+
+  def update_picture_change_change(self, file, **event_args):
     self.user['photo'] = file
     self.user.update()
     self.image_profile.source = file  # Met à jour l'affichage directement 
 
-  def file_loader_1_change(self, file, **event_args):
-    """This method is called when a new file is loaded into this FileLoader"""
-    pass
-
-  def update_picture_change_change(self, file, **event_args):
-    """This method is called when a new file is loaded into this FileLoader"""
-    pass
+    
 
   def button_delete_click(self, **event_args):
     """This method is called when the button is clicked"""
