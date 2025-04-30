@@ -84,7 +84,7 @@ class ProfileForm(ProfileFormTemplate):
         url="https://tea-room-fastapi.onrender.com/secure-upload",
         method="POST",
         files={"file": file},
-        data={"uploader_id": anvil.server.call("get_user_info")["user_id"]},
+        data={"uploader_id": str(anvil.server.call("get_user_info")["user_id"])},
         json=False
     )
 
