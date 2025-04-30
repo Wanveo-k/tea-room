@@ -1,0 +1,46 @@
+components:
+- layout_properties: {column: OVSIEX}
+  name: button_1
+  properties: {icon: 'fa:trash', text: Delete}
+  type: Button
+- layout_properties: {column: VJQQOR}
+  name: rich_text_name
+  properties: {}
+  type: RichText
+- layout_properties: {column: JKSDUP}
+  name: image_1
+  properties: {height: 101.39993286132812}
+  type: Image
+- components: []
+  layout_properties: {column: OJLQEN}
+  name: rich_text_price
+  properties: {}
+  type: RichText
+- components:
+  - event_bindings: {click: button_moins_click}
+    layout_properties: {grid_position: 'MSXZLY,UUWKSY'}
+    name: button_moins
+    properties:
+      spacing:
+        padding: [0, 0, 0, 0]
+      text: '-'
+    type: Button
+  - layout_properties: {grid_position: 'MSXZLY,KTVTNZ'}
+    name: label_1
+    properties: {align: center}
+    type: Label
+  - event_bindings: {click: button_plus_click}
+    layout_properties: {grid_position: 'MSXZLY,PWFAPJ'}
+    name: button_plus
+    properties:
+      align: center
+      spacing:
+        padding: [0, 0, 0, 0]
+      text: +
+    type: Button
+  layout_properties: {column: YDTGFR}
+  name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+container: {type: DataRowPanel}
+is_package: true

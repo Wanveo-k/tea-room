@@ -1,0 +1,77 @@
+components:
+- layout_properties: {slot: title}
+  name: menu_label
+  properties: {text: Menu}
+  type: Label
+- components:
+  - event_bindings: {click: profile_link}
+    layout_properties: {}
+    name: profile
+    properties: {text: Profile}
+    type: Link
+  - event_bindings: {click: cart_link}
+    layout_properties: {}
+    name: cart
+    properties: {italic: false, text: Cart}
+    type: Link
+  - event_bindings: {click: link_booking_click}
+    layout_properties: {}
+    name: link_booking
+    properties: {text: Bookings}
+    type: Link
+  - components:
+    - layout_properties: {}
+      name: label_admin_panel
+      properties: {font_size: 14, italic: true, text: Admin panel}
+      type: Label
+    - components: []
+      event_bindings: {click: list_client_link}
+      layout_properties: {}
+      name: list_clients
+      properties: {text: List clients, visible: true}
+      type: Link
+    - event_bindings: {click: list_product_click}
+      layout_properties: {}
+      name: list_products
+      properties: {text: List products}
+      type: Link
+    - event_bindings: {click: add_product_link}
+      layout_properties: {}
+      name: add_product
+      properties: {text: Add product}
+      type: Link
+    layout_properties: {}
+    name: linear_panel_admin
+    properties: {visible: false}
+    type: LinearPanel
+  layout_properties: {slot: left-nav}
+  name: linear_panel_1
+  properties: {}
+  type: LinearPanel
+- components:
+  - event_bindings: {click: main_page_button_click}
+    layout_properties: {}
+    name: main_page_button
+    properties:
+      text: "Page \nprincipale"
+    type: Button
+  - event_bindings: {click: logout_button_click}
+    layout_properties: {}
+    name: logout_button
+    properties:
+      text: "Logout\n "
+    type: Button
+  event_bindings: {}
+  layout_properties: {slot: nav-right}
+  name: logout
+  properties: {}
+  type: FlowPanel
+- components: []
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {visible: true}
+  type: ColumnPanel
+container:
+  properties: {html: '@theme:standard-page.html', tooltip: ''}
+  type: HtmlTemplate
+is_package: true

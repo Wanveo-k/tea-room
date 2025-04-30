@@ -1,0 +1,9 @@
+components:
+- layout_properties: {grid_position: 'HCORIV,IHGACI'}
+  name: message
+  properties:
+    italic: true
+    text: "Votre mot de passe n'est pas assez complexe. \nIl doit contenir au moins 10 caractères dont :\n   • Une majuscule\n   • Une minuscule\n   • Un chiffre\n   • Un caractère spécial"
+  type: Label
+container: {type: ColumnPanel}
+is_package: true

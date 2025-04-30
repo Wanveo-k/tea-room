@@ -1,0 +1,46 @@
+components:
+- layout_properties: {grid_position: 'YICLWK,NXRCBF'}
+  name: label_future
+  properties: {bold: true, font_size: 20, text: Future Bookings, underline: true}
+  type: Label
+- components:
+  - name: repeating_panel_future
+    properties: {item_template: Pages.Session.Customer.Dashboard.Bookings.FutureBookingForm}
+    type: RepeatingPanel
+  - layout_properties: {slot: footer}
+    name: label_future_message
+    properties: {visible: false}
+    type: Label
+  layout_properties: {grid_position: 'XQPNUE,IAWUGB'}
+  name: data_grid_future
+  properties:
+    columns:
+    - {data_key: table_photo, id: JKSDUP, title: Table Photo}
+    - {data_key: column_2, id: VJQQOR, title: Table Name}
+    - {data_key: start_datetime, id: OJLQEN, title: Starting Date and Time}
+    - {data_key: end_datetime, id: TIFONH, title: Ending Date and Time}
+    - {data_key: cancel, id: WJTGVQ, title: Cancel}
+  type: DataGrid
+- layout_properties: {grid_position: 'EYIDCU,JIDRDX'}
+  name: label_past
+  properties: {bold: true, font_size: 20, text: Past Bookings, underline: true}
+  type: Label
+- components:
+  - name: repeating_panel_past
+    properties: {item_template: Pages.Session.Customer.Dashboard.Bookings.PastBookingForm}
+    type: RepeatingPanel
+  - layout_properties: {slot: footer}
+    name: label_past_message
+    properties: {visible: false}
+    type: Label
+  layout_properties: {grid_position: 'UVPCQI,GGXXUP'}
+  name: data_grid_past
+  properties:
+    columns:
+    - {data_key: table_photo, id: JKSDUP, title: Table Photo}
+    - {data_key: table_name, id: VJQQOR, title: Table Name}
+    - {data_key: start_datetime, id: OJLQEN, title: Starting Date and Time}
+    - {data_key: end_datetime, id: FWJKDR, title: Ending Date and Time}
+  type: DataGrid
+container: {type: ColumnPanel}
+is_package: true

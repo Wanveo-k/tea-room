@@ -1,0 +1,33 @@
+components:
+- event_bindings: {click: update_button_click}
+  layout_properties: {column: VWOPBU}
+  name: update_button
+  properties: {icon: 'fa:rotate-right', text: Update}
+  type: Button
+- event_bindings: {click: delete_button_click}
+  layout_properties: {column: TDKQYL}
+  name: delete_button
+  properties: {icon: 'fa:trash', text: Delete}
+  type: Button
+- layout_properties: {column: KRJSPQ}
+  name: text_firstname
+  properties: {enabled: true}
+  type: TextBox
+- layout_properties: {column: MUZMAZ}
+  name: text_lastname
+  properties: {}
+  type: TextBox
+- layout_properties: {column: HTQLEU}
+  name: text_email
+  properties: {}
+  type: TextBox
+- layout_properties: {column: QKIMAC}
+  name: check_box_admin
+  properties: {align: center, checked: false, text: ''}
+  type: CheckBox
+- layout_properties: {column: NTJAAX}
+  name: image
+  properties: {display_mode: zoom_to_fill, height: 39}
+  type: Image
+container: {type: DataRowPanel}
+is_package: true

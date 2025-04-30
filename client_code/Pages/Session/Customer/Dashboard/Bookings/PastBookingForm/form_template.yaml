@@ -1,0 +1,19 @@
+components:
+- layout_properties: {column: JKSDUP}
+  name: image
+  properties: {display_mode: original_size}
+  type: Image
+- layout_properties: {column: VJQQOR}
+  name: label_name
+  properties: {}
+  type: Label
+- layout_properties: {column: OJLQEN}
+  name: label_start_datetime
+  properties: {}
+  type: Label
+- layout_properties: {column: FWJKDR}
+  name: label_end_datetime
+  properties: {}
+  type: Label
+container: {type: DataRowPanel}
+is_package: true

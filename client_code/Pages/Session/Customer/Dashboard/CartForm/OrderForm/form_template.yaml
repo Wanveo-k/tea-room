@@ -1,0 +1,23 @@
+components:
+- layout_properties: {column: JKSDUP}
+  name: image_product
+  properties: {display_mode: original_size, height: 110}
+  type: Image
+- layout_properties: {column: VJQQOR}
+  name: label_name
+  properties: {align: center}
+  type: Label
+- layout_properties: {column: OJLQEN}
+  name: label_quantity
+  properties: {align: center}
+  type: Label
+- layout_properties: {column: QNULEU}
+  name: label_total_price
+  properties: {align: center}
+  type: Label
+- layout_properties: {column: CCPHFT}
+  name: label_unit_price
+  properties: {align: center}
+  type: Label
+container: {type: DataRowPanel}
+is_package: true

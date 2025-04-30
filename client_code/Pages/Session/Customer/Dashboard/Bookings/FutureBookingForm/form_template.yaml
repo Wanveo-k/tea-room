@@ -1,0 +1,24 @@
+components:
+- layout_properties: {column: JKSDUP}
+  name: image
+  properties: {display_mode: original_size}
+  type: Image
+- layout_properties: {column: VJQQOR}
+  name: label_name
+  properties: {}
+  type: Label
+- event_bindings: {click: button_cancel_click}
+  layout_properties: {column: WJTGVQ}
+  name: button_cancel
+  properties: {icon: 'fa:trash', text: Cancel}
+  type: Button
+- layout_properties: {column: OJLQEN}
+  name: label_start_datetime
+  properties: {}
+  type: Label
+- layout_properties: {column: TIFONH}
+  name: label_end_datetime
+  properties: {}
+  type: Label
+container: {type: DataRowPanel}
+is_package: true

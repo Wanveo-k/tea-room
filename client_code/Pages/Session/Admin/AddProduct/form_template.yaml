@@ -1,0 +1,160 @@
+components:
+- layout_properties: {grid_position: 'GLOUTW,SRPZPV'}
+  name: label_tea
+  properties: {bold: true, font_size: 22, text: Add Tea}
+  type: Label
+- components:
+  - components:
+    - layout_properties: {grid_position: 'MLQRXW,VAIYVJ'}
+      name: label_tea_name
+      properties: {text: Name}
+      type: Label
+    - layout_properties: {grid_position: 'MLQRXW,VNEBWM'}
+      name: label_tea_description
+      properties: {text: Description}
+      type: Label
+    - layout_properties: {grid_position: 'MLQRXW,KRSJOL'}
+      name: label_tea_price
+      properties: {text: Price}
+      type: Label
+    - layout_properties: {grid_position: 'MLQRXW,SUVMZL'}
+      name: label_tea_image
+      properties: {text: Image}
+      type: Label
+    - layout_properties: {grid_position: 'MLQRXW,SGPOTY'}
+      name: label_tea_availability
+      properties: {text: Is Available}
+      type: Label
+    name: column_panel_tea_titles
+    properties: {}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'ASYRMC,XPKIKW'}
+      name: text_tea_name
+      properties: {placeholder: RedVelvet}
+      type: TextBox
+    - layout_properties: {grid_position: 'ASYRMC,NGODJW'}
+      name: text_tea_description
+      properties: {placeholder: Yummy tea with strawberry juice}
+      type: TextBox
+    - layout_properties: {grid_position: 'ASYRMC,UFWQRP'}
+      name: text_tea_price
+      properties: {placeholder: '4.99'}
+      type: TextBox
+    - layout_properties: {grid_position: 'ASYRMC,CXSPQC'}
+      name: file_loader_tea
+      properties: {}
+      type: FileLoader
+    - layout_properties: {grid_position: 'ASYRMC,KDNDPU'}
+      name: check_box_tea
+      properties: {align: center, checked: true, text: ''}
+      type: CheckBox
+    name: column_panel_tea_elements
+    properties: {col_widths: '{"XPKIKW":12,"NGODJW":12,"UFWQRP":12,"CXSPQC":14,"KDNDPU":10}'}
+    type: ColumnPanel
+  - components:
+    - event_bindings: {click: button_tea_add_click}
+      layout_properties: {grid_position: 'ZPAEVI,OVJSHO'}
+      name: button_tea_add
+      properties: {icon: 'fa:check', text: Validate}
+      type: Button
+    - event_bindings: {click: button_tea_clear_click}
+      layout_properties: {grid_position: 'ZPAEVI,AONLCM'}
+      name: button_tea_clear
+      properties: {icon: 'fa:rotate-left', text: Reset}
+      type: Button
+    name: column_panel_tea_buttons
+    properties: {}
+    type: ColumnPanel
+  - layout_properties: {}
+    name: spacer_1
+    properties: {height: 35}
+    type: Spacer
+  layout_properties: {grid_position: 'SVVNND,QFABFE'}
+  name: linear_panel_tea
+  properties: {}
+  type: LinearPanel
+- layout_properties: {grid_position: 'KMBNKA,WZROEH'}
+  name: label_goodie
+  properties: {bold: true, font_size: 22, text: Add Goodie}
+  type: Label
+- components:
+  - components:
+    - layout_properties: {grid_position: 'MLQRXW,VAIYVJ'}
+      name: label_goodie_name
+      properties: {text: Name}
+      type: Label
+    - layout_properties: {grid_position: 'MLQRXW,VNEBWM'}
+      name: label_goodie_description
+      properties: {text: Description}
+      type: Label
+    - layout_properties: {grid_position: 'MLQRXW,KRSJOL'}
+      name: label_goodie_price
+      properties: {text: Price}
+      type: Label
+    - layout_properties: {grid_position: 'MLQRXW,EZRZHH'}
+      name: label_goodie_quantity
+      properties: {text: Quantity}
+      type: Label
+    - layout_properties: {grid_position: 'MLQRXW,SUVMZL'}
+      name: label_goodie_image
+      properties: {text: Image}
+      type: Label
+    - layout_properties: {grid_position: 'MLQRXW,SGPOTY'}
+      name: label_goodie_availability
+      properties: {text: Is Available}
+      type: Label
+    name: column_panel_goodie_title
+    properties: {}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'ASYRMC,XPKIKW'}
+      name: text_goodie_name
+      properties: {placeholder: ChocoCookie}
+      type: TextBox
+    - layout_properties: {grid_position: 'ASYRMC,NGODJW'}
+      name: text_goodie_description
+      properties: {placeholder: Cookie with chocolate chip}
+      type: TextBox
+    - layout_properties: {grid_position: 'ASYRMC,UFWQRP'}
+      name: text_goodie_price
+      properties: {placeholder: '1.49'}
+      type: TextBox
+    - layout_properties: {grid_position: 'ASYRMC,XYATPG'}
+      name: text_goodie_quantity
+      properties: {placeholder: '10'}
+      type: TextBox
+    - layout_properties: {grid_position: 'ASYRMC,CXSPQC'}
+      name: file_loader_goodie
+      properties: {}
+      type: FileLoader
+    - layout_properties: {grid_position: 'ASYRMC,KDNDPU'}
+      name: check_box_goodie
+      properties: {align: center, checked: true, text: ''}
+      type: CheckBox
+    name: column_panel_goodie_elements
+    properties: {col_widths: '{"XPKIKW":12,"NGODJW":12,"UFWQRP":12,"CXSPQC":14,"KDNDPU":10}'}
+    type: ColumnPanel
+  - components:
+    - event_bindings: {click: button_goodie_add_click}
+      layout_properties: {grid_position: 'LDREKT,JJGYDG'}
+      name: button_goodie_add
+      properties: {icon: 'fa:check', text: Validate}
+      type: Button
+    - event_bindings: {click: button_goodie_clear_click}
+      layout_properties: {grid_position: 'LDREKT,KVZWLS'}
+      name: button_goodie_clear
+      properties: {icon: 'fa:rotate-left', text: Reset}
+      type: Button
+    name: column_panel_goodie_buttons
+    properties: {}
+    type: ColumnPanel
+  layout_properties: {grid_position: 'ZJOKEP,EDRGVI'}
+  name: linear_panel_goodie
+  properties: {}
+  type: LinearPanel
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+custom_component: true
+is_package: true

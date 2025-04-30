@@ -1,0 +1,49 @@
+components:
+- layout_properties: {grid_position: 'FENXJV,EGJHYG'}
+  name: label_tea
+  properties: {bold: true, font_size: 22, text: Teas}
+  type: Label
+- components:
+  - name: table_teas
+    properties: {item_template: Pages.Session.Admin.ListProducts.RowTemplateTea}
+    type: RepeatingPanel
+  layout_properties: {grid_position: 'GMMNXP,OGFSYG'}
+  name: grid_teas
+  properties:
+    columns:
+    - {data_key: id, id: VMGANL, title: ID}
+    - {data_key: name, id: SJIWBR, title: Name}
+    - {data_key: description, id: UAECJK, title: Description}
+    - {data_key: price, id: CFMGUC, title: Price}
+    - {data_key: image, id: UYKNSJ, title: Image}
+    - {data_key: is_available, id: WJZQIK, title: Is Available}
+    - {data_key: update, id: RFROJN, title: Update}
+    - {data_key: delete, id: XOGULA, title: Delete}
+    rows_per_page: 10
+  type: DataGrid
+- layout_properties: {grid_position: 'VSVHLE,GMZHWN'}
+  name: label_goodies
+  properties: {bold: true, font_size: 22, text: Goodies}
+  type: Label
+- components:
+  - name: table_goodies
+    properties: {item_template: Pages.Session.Admin.ListProducts.RowTemplateGoodie}
+    type: RepeatingPanel
+  layout_properties: {grid_position: 'ROVEGU,BUGRYK'}
+  name: grid_goodies
+  properties:
+    columns:
+    - {data_key: id, id: GYHAJR, title: ID}
+    - {data_key: name, id: UPLVGE, title: Name}
+    - {data_key: description, id: NRFGVG, title: Description}
+    - {data_key: price, id: ACJEDE, title: Price}
+    - {data_key: image, id: VXRDNJ, title: Image}
+    - {data_key: is_available, id: GEKRFJ, title: Is Available}
+    - {data_key: quantity, id: LINMJQ, title: Quantity}
+    - {data_key: update, id: JJHFQY, title: Update}
+    - {data_key: delete, id: NFVLAO, title: Delete}
+    rows_per_page: 10
+  type: DataGrid
+container: {type: ColumnPanel}
+custom_component: true
+is_package: true

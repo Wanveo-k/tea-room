@@ -1,0 +1,33 @@
+components:
+- event_bindings: {click: button_update_click}
+  layout_properties: {column: RFROJN}
+  name: button_update
+  properties: {icon: 'fa:repeat', text: Update}
+  type: Button
+- event_bindings: {click: button_delete_click}
+  layout_properties: {column: XOGULA}
+  name: button_delete
+  properties: {icon: 'fa:trash', text: Delete}
+  type: Button
+- layout_properties: {column: WJZQIK}
+  name: check_box_availability
+  properties: {align: center, text: ''}
+  type: CheckBox
+- layout_properties: {column: UYKNSJ}
+  name: image_tea
+  properties: {display_mode: zoom_to_fill, height: 42}
+  type: Image
+- layout_properties: {column: CFMGUC}
+  name: text_price
+  properties: {}
+  type: TextBox
+- layout_properties: {column: UAECJK}
+  name: text_description
+  properties: {}
+  type: TextBox
+- layout_properties: {column: SJIWBR}
+  name: text_name
+  properties: {}
+  type: TextBox
+container: {type: DataRowPanel}
+is_package: true

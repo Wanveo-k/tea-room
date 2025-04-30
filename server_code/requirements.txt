@@ -1,0 +1,6 @@
+argon2
+argon2-cffi
+itsdangerous
+pyotp
+qrcode
+pillow

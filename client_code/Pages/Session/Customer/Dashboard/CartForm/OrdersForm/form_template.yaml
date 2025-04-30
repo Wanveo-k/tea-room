@@ -1,0 +1,22 @@
+components:
+- event_bindings: {click: button_display_content_click}
+  layout_properties: {column: EMDRTO}
+  name: button_display_content
+  properties: {icon: 'fa:eye', text: Display Order}
+  type: Button
+- layout_properties: {column: OJLQEN}
+  name: label_date_time
+  properties: {align: center}
+  type: Label
+- layout_properties: {column: VJQQOR}
+  name: label_price
+  properties: {align: center}
+  type: Label
+- layout_properties: {column: JKSDUP}
+  name: label_done
+  properties: {align: center}
+  type: Label
+container:
+  properties: {align: center}
+  type: DataRowPanel
+is_package: true
